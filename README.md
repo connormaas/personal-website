@@ -1,4 +1,4 @@
-# Personal Website - Connor Maas
+# Personal Website
 
 Welcome to the repository of my personal website, 
 [connormaas.com](https://connormaas.com). This website showcases my journey and 
