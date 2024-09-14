@@ -8,6 +8,7 @@ function main() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
           if (target.length) {
             $('html,body').animate({
               scrollTop: target.offset().top - 40
@@ -20,9 +21,10 @@ function main() {
 
 $('#nav').affix({
       offset: {
-        top: $('header').height()
+        top: $('header').height() 
       }
 });	
+
 	// skills chart
 	$(document).ready(function(e) {
 	var index=0;

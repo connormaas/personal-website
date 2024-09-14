@@ -66,8 +66,6 @@ ul, ol {
 }
 ul, ol {
 	padding: 0;
-	webkit-padding: 0;
-	moz-padding: 0;
 }
 hr {
 	height: 4px;
@@ -86,7 +84,7 @@ hr {
 #nav.affix {
 	position: fixed;
 	top: 0;
-	width: 100%
+	width: 100%;
 }
 .navbar-custom {
 	margin-bottom: 0;
@@ -199,9 +197,16 @@ hr {
 }
 /* About Section */
 #about {
-	padding: 100px 0;
+	padding-top: 140px;
+	padding-bottom: 100px;
+	/* padding: 100px 0; */
 	background: white;
 }
+
+/* #nav.affix ~ #about {
+    padding-top: 170px;
+} */
+
 #about .about-text {
 	margin-left: 10px;
 }
@@ -384,6 +389,7 @@ ol.type li a:hover {
 	font-size: 80;
 	opacity: 1;
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
 }
@@ -398,6 +404,7 @@ ol.type li a:hover {
 	font-size: 80;
 	opacity: 1;
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	-webkit-transform: translateY(100%);
 	transform: translateY(100%);
 }
@@ -738,6 +745,11 @@ header .intro-text {
 }
 
 @media(max-width:768px) {
+header {
+	display: none;
+	height: 0;
+}
+
 .intro H1 {
 	font-size: 33px;
 	font-weight: 500;
@@ -780,6 +792,10 @@ header .intro-text {
 }
 
 @media(min-width:992px) {
+header {
+	display: block;
+	height: auto;
+}
 #here-me h1 {
 	margin: 10px 0 0px;
 }
